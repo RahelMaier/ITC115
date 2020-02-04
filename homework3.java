@@ -1,33 +1,28 @@
-package homework;
 
-public class P {
-	 public static void main(String[] args) { 
-		 printPowersOfN(2,7);   
-		 printPowersOfN(5,3); }
+public class homework3 {
 
- public static void printPowersOfN(int base, int exponent) {
+	public static void main(String[] args) {
 
-			    int currentNum = 1;
+		System.out.println(repl("Rahel",5));
+// this method well repl my name five times.
+		
 
-			    System.out.print(currentNum + " ");
-
-			    
-
-			    for (int i = 1; i <= exponent; i++) {
-
-			        currentNum *= base;
-
-			        System.out.print(currentNum + " ");
-
-			    }
-
-			    
-
-			    System.out.println();
-
-			}
-
-		 
 	}
 
-		
+	public static String repl(String str, int times) {
+
+		String tmp = "";
+
+		for (int i = 0 ; i < times; i++) {
+
+			tmp = tmp + str;
+
+			//Amp += star;
+
+		}
+
+		return tmp;
+
+	}
+	}
+
