@@ -1,28 +1,57 @@
-// write a mothed called season
-public class SEA3 {
-	
+//*******************************************************************
 
-	public static void main(String[] args) {
-		
-		
-	}
-		// TODO Auto-generated method stub
-		public static String season(int month,int day){
-			   
-		    if(month>=9 && month<=12 && day==15||day==16){
-		        return "Fall";
-		    }
-		    else if (month>=4 && month<=6 && day==16||day==15){
-		       return "Spring";
-		     }
-		    else if (month>=6 && month<=9 && day==16||day==15){
-		         return "Summer";
-		     }
-		     else {
-		          return"Winter";
+//  Your method should compute the absolute difference between the sum 
 
-		         
-		     }
-	}
-		  
+  of the boys' integers and the sum of the girls' integers.
+//
+// Description of the class or method purpose
+//By: Rahel 
+//Date 02 14 20
+//****************************************************************
+
+
+public void boyGirl(Scanner sc) {
+
+    int boyCount = 0;
+
+    int boySum = 0;
+
+    int girlCount = 0;
+
+    int girlSum = 0;
+
+    
+
+    while(sc.hasNext()) {
+
+        sc.next();
+
+        boyCount++;
+
+        boySum += sc.nextInt();
+
+        
+
+        if(!sc.hasNext())
+
+            break;
+
+        
+
+        sc.next();
+
+        girlCount++;
+
+        girlSum += sc.nextInt();
+
+    }
+
+    
+
+    System.out.println(boyCount + " boys, " + girlCount + " girls");
+
+    System.out.println("Difference between boys' and girls' sums: " + 
+
+        Math.abs(boySum - girlSum));
+
 }
