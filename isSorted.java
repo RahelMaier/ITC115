@@ -1,4 +1,4 @@
-//Wrote a method called isSorted
+//Write a method called isSorted
 
 public class isSorted {
 	public static void main (String[] args) {
