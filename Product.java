@@ -1,3 +1,5 @@
+\\Design and Code a class for a generic product\\
+
 import java.text.NumberFormat;
 
 public class Product
